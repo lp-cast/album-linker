@@ -1,0 +1,17 @@
+{
+  "name": "album-linker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "asker-as-promised": "^2.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "p-map": "^2.1.0",
+    "yargs": "^13.3.0"
+  }
+}
