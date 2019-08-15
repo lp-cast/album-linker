@@ -8,7 +8,7 @@
 ## Install
 
 ```
-$ git clone https://github.com/lp-cast/album-linker.git && cd album-linker && npm i
+git clone https://github.com/lp-cast/album-linker.git && cd album-linker && npm i
 
 ```
 
