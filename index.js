@@ -19,6 +19,7 @@ services.set('music.apple.com', 'в Apple Music');
 services.set('music.yandex.ru', 'Яндекс.Музыке');
 services.set('spotify.com', 'Spotify');
 services.set('tidal.com', 'Tidal');
+services.set('discogs.com', 'Discogs');
 
 const snippetSelector = '.kCrYT';
 
@@ -60,7 +61,7 @@ if (argv.service) {
 
 pMap(actions, service => process(service), {concurrency: 2})
     .then(result => {
-        const reportTypes = new Set([ 'markdown', 'plaintext', 'html', 'json']);
+        const reportTypes = new Set(['markdown', 'plaintext', 'html', 'json']);
         let type;
         if (argv.format) {
             if (reportTypes.has(argv.format)) {
