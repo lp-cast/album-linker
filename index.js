@@ -59,7 +59,7 @@ if (argv.service) {
     }
 }
 
-pMap(actions, service => process(service), {concurrency: 2})
+pMap(actions, service => process(service), {concurrency: 5})
     .then(result => {
         const reportTypes = new Set(['markdown', 'plaintext', 'html', 'json']);
         let type;
