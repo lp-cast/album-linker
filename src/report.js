@@ -14,16 +14,16 @@
 module.exports = {
     markdown: (opts) => {
         return [
-            `Альбом «${opts.album}»`,
+            `Альбом «${opts.album}» в `,
             opts.links.map(item => {
                 return `  [${item.text}](${item.link})`;
             }).join(', \n')
-        ].join(' ');
+        ].join('\n');
     },
 
     plaintext: (opts) => {
         return [
-            `Альбом «${opts.album}»`,
+            `Альбом «${opts.album}» в `,
             opts.links.map(item => {
                 return `${item.text} ${item.link}`;
             }).join(', ')
@@ -32,7 +32,7 @@ module.exports = {
 
     html: (opts) => {
         return [
-            `Альбом «${opts.album}»`,
+            `Альбом «${opts.album}» в `,
             opts.links.map(item => {
                 return `<a href="${item.link}">${item.text}</a>`;
             }).join(', ')

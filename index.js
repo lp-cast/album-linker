@@ -15,7 +15,7 @@ if (!argv.album) error("You need to pass --album='…' argument.  See readme.");
 const collection = [];
 
 const services = new Map();
-services.set('music.apple.com', 'в Apple Music');
+services.set('music.apple.com', 'Apple Music');
 services.set('music.yandex.ru', 'Яндекс.Музыке');
 services.set('spotify.com', 'Spotify');
 services.set('tidal.com', 'Tidal');
