@@ -16,7 +16,7 @@ module.exports = {
         return [
             `Альбом «${opts.album}»`,
             opts.links.map(item => {
-                return `[${item.text}](${item.link})`;
+                return `  [${item.text}](${item.link})`;
             }).join(', \n')
         ].join(' ');
     },
