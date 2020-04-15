@@ -2,9 +2,10 @@
   "name": "album-linker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,9 @@
     "asker-as-promised": "^2.0.0",
     "cheerio": "^1.0.0-rc.3",
     "p-map": "^2.1.0",
-    "yargs": "^13.3.0"
+    "typescript": "^3.8.3",
+    "yargs": "^13.3.0",
+    "@types/yargs": "^13.0.8",
+    "@types/cheerio": "0.22.17"
   }
 }
